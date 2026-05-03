@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: linear-gradient(to bottom, #e0ffff, #ffc0cb);
+      font-family: 'Arial', sans-serif;
+      background-color: #a9cbed;
+    }
+
+    .navbar {
+      padding: 1rem 0;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .navbar p {
+      font-size: 0.9rem;
+      color: #6c757d;
+      margin: 0;
+      text-align: center;
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+    }
+
+    .slideshow {
+      width: 600px;
+      height: 400px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .slideshow img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+
+    .slideshow img.active {
+      opacity: 1;
+    }
+
+    .caption {
+      width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 24px;
+      color: #0000ff;
+    }
+
+    .container {
+      margin-top: 2rem;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .title-center {
+      text-align: center;
+    }
+    input[type=submit] {
+                    background-color: #a72ec5; /* 修改按鈕顏色 */
+                    border: 3px solid #59f731; /* 增加顏色外框 */
+                    color: white;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <span class="text-center">『星光營影，車影食蹤』</span>
+        <p class="text-center">整合式機車露營服務</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html">關於我們</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              服務介紹
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="food.html">食品服務</a></li>
+              <li><a class="dropdown-item" href="Car rental service.html">租車服務</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Form.html">訂購表單</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="搜尋" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">搜尋</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <h1 class="title-center">租車服務</h1>
+  <hr>
+  <div class="slideshow">
+    <img src="img/4..jpg" alt="摩托車1" class="active">
+    <img src="img/1..jpg" alt="摩托車2">
+    <img src="img/2..jpg" alt="摩托車3">
+    <img src="img/3..jpg" alt="摩托車4">
+  </div>
+  <div class="caption">
+  
+    <p id="text1"><strong>YAMAHA BWS 125</strong>
+      <br><form action="From.html" method="get"><input type="submit" value="提交訂單">
+      
+
+      <br>1. 越野能力： Yamaha BWS擁有強大的引擎和越野懸吊系統，使其適應不平的地形，提供穩定的越野表現。
+
+      <br>2. 儲物空間： 車身結構通常設計了儲物區域，可讓你攜帶一些基本的露營裝備，如水壺、輕便食品等。
+      
+      <br>3. 燈光系統： 設有強而有力的燈光系統，使其在夜間越野或露營時提供足夠的視覺支援。
+      
+      <br>4. 油箱容量： 具有較大的油箱容量，增加了行駛範圍，方便長途越野旅行或露營活動。
+      
+      <br>5. 耐久性： Yamaha BWS的機械結構和材料選擇通常考慮了耐久性，適應各種環境和條件。
+
+      <br>6. 輕便操控： 設計輕巧、操控靈活，適合在不同地形下輕鬆移動，使其成為越野探險的理想伴侶。</p>
+    <p id="text2"><strong>HONDA CRF 150</strong> 
+      <br><form action="From.html" method="get"><input type="submit" value="提交訂單">
+      </form>
+      <br>1. 越野性能： CRF150具有優越的越野性能，包括強大的引擎、卓越的懸吊系統和抓地力強的輪胎，使其能夠應對各種地形挑戰。
+
+      <br> 2. 輕巧操控：設計輕巧，操控靈活，適合在狹窄的越野道路上靈活穿梭，提供更好的操控性能。
+      
+      <br>3. 耐用結構： CRF150的機械結構和材料通常經過精心設計，以提高耐久性，確保在惡劣條件下的可靠性。
+      
+      <br>4. 適應多種地形： 輪胎設計和懸吊系統的調整使其能夠適應不同的地形，包括崎嶇山區、泥濘的小徑和沙漠地帶。
+      
+      <br>5. 露營裝備承載： 摩托車上通常設有各種裝備安裝點，方便攜帶露營所需的物品，如帳篷、睡袋和炊具等。
+      
+      <br> 6. 舒適座椅： 提供舒適的座椅，讓長時間的越野騎行更加輕鬆，同時適合在露營地休息。</p>
+    <p id="text3"><strong>CPI SM 250</strong> 
+      <br><form action="From.html" method="get"><input type="submit" value="提交訂單">
+      <br>1. 越野性能： 強大的懸吊系統和高足地勢，使CPI SM250在不平坦的地形上表現卓越，適應各種越野環境。
+
+      <br>2. 引擎動力： 搭載強勁且高效的引擎，提供足夠的動力應對各種騎行情境，包括陡峭的爬坡和不平整的地面。
+      
+      <br>3. 多用途載具： 配備多功能載具架，方便攜帶露營裝備和其他必需品，使其成為理想的露營夥伴。
+      <br>4. 舒適騎乘體驗： 舒適的騎乘姿勢和人體工學設計，使長途騎行更加輕鬆和愉悅。
+      
+      <br> 5. 大容量油箱： 配有大容量油箱，延長行駛里程，適合長時間的越野探險和露營旅行。
+      
+      <br>6. 數字儀表板： 配備現代化的數字儀表板，提供騎乘資訊和操作便捷性。</p>
+    <p id="text4"><strong>X-ADV 750</strong> 
+      <br><form action="From.html" method="get"><input type="submit" value="提交訂單">
+      
+    <br>  1. 越野風格： X ADV750採用越野風格的外觀設計，擁有高足地勢和強健懸掛系統，使其在多樣的地形中表現卓越。
+
+    <br>  2. 引擎性能： 搭載強勁的引擎，提供足夠的動力應對各種騎行狀況，包括越野地形和長途旅行。
+      
+    <br>  3. 多功能載具： X ADV750具有寬敞且多功能的載具空間，方便攜帶露營裝備、行李和其他必需品，為露營活動提供方便。
+      
+    <br>  4. 防風保護： 配備風防和較高的擋泥板，提供良好的風阻保護，增加舒適性，特別適合長途騎行。
+          
+    <br>  5. 高舒適性： 舒適的騎乘姿勢、人體工學設計和可調整座椅，確保騎行過程中的最大舒適性。
+      
+    <br>  6. 先進科技： 配備現代化的科技，包括數位儀表板、智能安全系統等，提升騎行樂趣和安全性。</p>
+  </div>
+  <script>
+    let images = document.querySelectorAll(".slideshow img");
+    let texts = document.querySelectorAll(".caption p");
+    let index = 0;
+    function showNext() {
+      images[index].classList.remove("active");
+      texts[index].style.display = "none";
+      index = (index + 1) % images.length;
+      images[index].classList.add("active");
+      texts[index].style.display = "block";
+    }
+    setInterval(showNext, 9000);
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

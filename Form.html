@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* 修改字體 */
+            font-size: 20px; /* 修改文字大小 */
+            text-align: center;
+        }
+
+        h1 {
+            color: #8FB428;
+            animation: fadeIn 2s;
+            border: 5px solid black; /* 增加黑色外框 */
+            font-weight: bold; /* 修改文字字體加粗 */
+        }
+
+        input,
+        select {
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #264E7E;
+            color: white;
+            padding: 5px; /* 修改頁尾版面 */
+            font-size: 10px; /* 修改頁尾文字大小 */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: slideUp 2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0%);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(0%);
+            }
+        }
+
+        input[type=submit] {
+            background-color: #3b76be; /* 修改按鈕顏色 */
+            border: 3px solid #c5f838; /* 增加顏色外框 */
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .navbar {
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .navbar p {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin: 0;
+            text-align: center;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        form.d-flex input.form-control {
+            border: 1px solid transparent; /* 將邊框顏色設置為透明 */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="text-center">『星光營影，車影食蹤』</span>
+                <p class="text-center">整合式機車露營服務</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            服務介紹
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="food.html">食品服務</a></li>
+                            <li><a class="dropdown-item" href="Car rental service.html">租車服務</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Form.html">訂購表單</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="搜尋" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">搜尋</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <h1>星光營影，車影食蹤</h1>
+    <form>
+        <p>姓名：<input type="text" name="name" required></p>
+        <p>電話：<input type="tel" name="phone" required></p>
+        <p>電子郵件：<input type="email" name="email" required></p>
+        <p>是否需要租借車輛：
+            <select name="rental" required>
+                <option value="是">是</option>
+                <option value="否">否</option>
+            </select>
+        </p>
+        <p>食品選購區：</p>
+        <p>鍋底：
+            <select name="soup" required>
+                <option value="麻辣牛味">麻辣牛味</option>
+                <option value="藥膳羊味">藥膳羊味</option>
+                <option value="砂鍋魚味">砂鍋魚味</option>
+            </select>
+        </p>
+        <p>肉類：
+            <input type="checkbox" name="meat" value="牛肉">牛肉
+            <input type="checkbox" name="meat" value="鴨肉">鴨肉
+            <input type="checkbox" name="meat" value="雞肉">雞肉
+        </p>
+        <p>海鮮：
+            <input type="checkbox" name="seafood" value="蝦">蝦
+            <input type="checkbox" name="seafood" value="魚">魚
+            <input type="checkbox" name="seafood" value="魷魚">魷魚
+        </p>
+        <p>甜點：
+            <input type="radio" name="dessert" value="日式烤團子" required>日式烤團子
+            <input type="radio" name="dessert" value="冰淇淋泡芙" required>冰淇淋泡芙
+            <input type="radio" name="dessert" value="奶油鬆餅" required>奶油鬆餅
+        </p>
+        <p>車輛種類：</p>
+        <p>檔車：
+            <input type="radio" name="manual" value="CRF150">CRF150
+            <input type="radio" name="manual" value="SM250">SM250
+        </p>
+        <p>速克達：
+            <input type="radio" name="scooter" value="X-ADV">X-ADV
+            <input type="radio" name="scooter" value="BWS">BWS
+        </p>
+        <p><input type="submit" value="提交訂單"></p>
+    </form>
+    <footer>
+        <p>商店名稱：星光營影，車影食蹤</p>
+        <p>聯絡資訊：電話 0987654321，地址 台北市中正區忠孝東路一段1號</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

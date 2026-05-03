@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333; /* Choose a color for the heading */
+        }
+        h2 {
+            color: #5a569e;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        img {
+            max-width: 20%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        /* Additional style for the lightbox images */
+        img.lightbox-img {
+            width: 320px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/lightbox.css">
+</head>
+<body style="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="text-center">『星光營影，車影食蹤』</span>
+                <p class="text-center">整合式機車露營服務</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            服務介紹
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="food.html">食品服務</a></li>
+                            <li><a class="dropdown-item" href="Car rental service.html">租車服務</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Form.html">訂購表單</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="搜尋" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">搜尋</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #a9cbed;
+            padding-top: 56px;
+        }
+
+        .navbar {
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .navbar p {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin: 0;
+            text-align: center;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+           
+        }
+
+        .carousel {
+            margin-top: 2rem;
+        }
+
+        .carousel-item img {
+            width: 100%;
+        }
+
+        .container {
+            margin-top: 2rem;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(29, 159, 152);
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .title-center {
+            text-align: center;
+        }
+    </style>
+   
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+   $('#my_tabs').tabs({event:'mouseover'});
+</script>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"></nav>
+    <body style="">
+        <div id="my_tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+            <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+                <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="t1" aria-labelledby="ui-id-1" aria-selected="false" aria-expanded="false"><a href="#t1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">肉品</a></li>
+                <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="a2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a href="#a2" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">海鮮</a></li>
+                <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="b3" aria-labelledby="ui-id-3" aria-selected="false" aria-expanded="false"><a href="#b3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">鍋底</a></li>
+                <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="c4" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a href="#c4" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">甜點</a></li>
+            </ul>
+            <div id="t1" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="display: none;">
+            
+                <h1>食材展示</h1>
+                <hr>
+                <style>
+                    
+        /* 您現有的CSS樣式 */
+
+        /* 網格佈局的額外樣式 */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px; /* 根據需要調整間距 */
+        }
+
+        .image-grid img {
+            width: 100%; /* 使圖片填滿網格列 */
+            height: auto;
+            margin-bottom: 10px; /* 根據需要調整邊距 */
+        }
+   
+                    @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+                .marquee {
+                  font-family: 'Indie Flower', cursive;
+                  font-size: 24px;
+                  color: rgb(54, 2, 61);
+                }
+                h1 {
+            font-size: 36px;
+            color: rgb(54, 2, 61);
+        }
+
+        /* 水平分隔線樣式 */
+        #t2 hr {
+            border: 1px solid #ccc;
+        }
+
+        /* 食材輪播樣式 */
+        .marquee {
+            font-family: 'Indie Flower', cursive;
+            font-size: 24px;
+            color: rgb(54, 2, 61);
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 20px; /* 與下方內容分隔的邊距 */
+        }
+
+        /* 輪播內容區域樣式 */
+        .marquee span {
+            display: inline-block;
+            width: 3000px; /* 設定總寬度以容納所有圖片 */
+            animation: marquee 30s linear infinite;
+        }
+
+        /* 輪播圖片樣式 */
+        .marquee span img {
+            width:300px; /* 保證圖片填滿容器 */
+            height: auto;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+                </style>
+               
+                
+                <div class="marquee">
+                  <span>
+                      <img src="img/2 0AA9F027-D2E2-4DA3-A8EB-2FEAB8FFBBF7.jpeg" alt="carb" class="product-image">
+                      <img src="img/5 5FE71F7D-141F-47AC-9899-1401B7C91F73.jpeg" alt="carb" class="product-image">
+                      <img src="img/8 16CAFB0C-1DF9-4567-93B3-0675FF9ACB39.jpeg" alt="carb" class="product-image">
+                      <img src="img/13 191F97E3-901E-45A6-9C10-F653D574AEA4.jpeg" alt="carb" class="product-image">
+                      <img src="img/17 A74CA8EF-281C-4144-88CC-8031682B2BF0.jpeg" alt="carb" class="product-image">
+                      <img src="img/20 E2D9E244-58CF-4E00-AD38-891026A59683.jpeg" alt="carb" class="product-image">
+                      <img src="img/21 ED996279-4535-4B21-9B24-E75094EDBF7D.jpeg" alt="carb" class="product-image">
+                      <img src="img/2 0AA9F027-D2E2-4DA3-A8EB-2FEAB8FFBBF7.jpeg" alt="carb" class="product-image">
+                      <img src="img/5 5FE71F7D-141F-47AC-9899-1401B7C91F73.jpeg" alt="carb" class="product-image">
+                      <img src="img/8 16CAFB0C-1DF9-4567-93B3-0675FF9ACB39.jpeg" alt="carb" class="product-image">
+                      <img src="img/13 191F97E3-901E-45A6-9C10-F653D574AEA4.jpeg" alt="carb" class="product-image">
+                      <img src="img/17 A74CA8EF-281C-4144-88CC-8031682B2BF0.jpeg" alt="carb" class="product-image">
+                      <img src="img/20 E2D9E244-58CF-4E00-AD38-891026A59683.jpeg" alt="carb" class="product-image">
+                      <img src="img/21 ED996279-4535-4B21-9B24-E75094EDBF7D.jpeg" alt="carb" class="product-image">
+                      <img src="img/2 0AA9F027-D2E2-4DA3-A8EB-2FEAB8FFBBF7.jpeg" alt="carb" class="product-image">
+                      <img src="img/5 5FE71F7D-141F-47AC-9899-1401B7C91F73.jpeg" alt="carb" class="product-image">
+                      <img src="img/8 16CAFB0C-1DF9-4567-93B3-0675FF9ACB39.jpeg" alt="carb" class="product-image">
+                      <img src="img/13 191F97E3-901E-45A6-9C10-F653D574AEA4.jpeg" alt="carb" class="product-image">
+                      <img src="img/17 A74CA8EF-281C-4144-88CC-8031682B2BF0.jpeg" alt="carb" class="product-image">
+                      <img src="img/20 E2D9E244-58CF-4E00-AD38-891026A59683.jpeg" alt="carb" class="product-image">
+                      <img src="img/21 ED996279-4535-4B21-9B24-E75094EDBF7D.jpeg" alt="carb" class="product-image">
+                  </span>
+                  <script src="js/lightbox.js"></script><br>
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script><br>
+                <h1>點擊圖片查看更多</h1><br>
+                <hr>
+                
+            
+<a href="cow shoulder.html">
+<img src="img/5 5FE71F7D-141F-47AC-9899-1401B7C91F73.jpeg" alt="美國CH肩小排">
+<h3>美國嫩肩牛排 ❗️傳說中比臉大牛排❗️🔥現貨供應🔥</h3><br>
+
+</a><a href="chicken leg.html">
+<img src="img/17 A74CA8EF-281C-4144-88CC-8031682B2BF0.jpeg" alt="醉雞腿">
+<h3>紹香醉雞腿 🔥現貨供應🔥</h3> <br>
+
+</a><a href="beef2.html">
+<img src="img/13 191F97E3-901E-45A6-9C10-F653D574AEA4.jpeg" alt="美國翼板牛火鍋肉片">
+<h3> 🐂美國翼板牛火鍋肉片🐂🔥現貨供應🔥</h3><br>
+
+</a><a href="duck.html">
+<img src="img/20 E2D9E244-58CF-4E00-AD38-891026A59683.jpeg" alt="原味櫻桃鴨胸">
+<h3> 原味櫻桃鴨胸🔥現貨供應🔥</h3><br>
+
+</a><a href="chicken.html">
+<img src="img/8 16CAFB0C-1DF9-4567-93B3-0675FF9ACB39.jpeg" alt="去骨雞腿排">
+<h3>去骨雞腿排🔥現貨供應🔥</h3><br>
+
+</a><a href="beef.html">
+<img src="img/21 ED996279-4535-4B21-9B24-E75094EDBF7D.jpeg" alt="㊙️安格斯PR板腱牛排㊙️">
+<h3>㊙️安格斯PR板腱牛排㊙️🔥現貨供應🔥</h3></a><br>
+</div>
+</div>
+        
+
+
+                <div id="a2" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="display: block;">
+                <h1>食材展示</h1>
+                <hr>
+                <style>
+                    @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+                .marquee {
+                  font-family: 'Indie Flower', cursive;
+                  font-size: 24px;
+                  color: rgb(54, 2, 61);
+                }
+                h1 {
+            font-size: 36px;
+            color: rgb(54, 2, 61);
+        }
+
+        /* 水平分隔線樣式 */
+        #t2 hr {
+            border: 1px solid #ccc;
+        }
+
+        /* 食材輪播樣式 */
+        .marquee {
+            font-family: 'Indie Flower', cursive;
+            font-size: 24px;
+            color: rgb(54, 2, 61);
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 20px; /* 與下方內容分隔的邊距 */
+        }
+
+        /* 輪播內容區域樣式 */
+        .marquee span {
+            display: inline-block;
+            width: 3000px; /* 設定總寬度以容納所有圖片 */
+            animation: marquee 30s linear infinite;
+        }
+
+        /* 輪播圖片樣式 */
+        .marquee span img {
+            width:300px; /* 保證圖片填滿容器 */
+            height: auto;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+                </style>
+               
+                
+                <div class="marquee">
+                  <span>
+                      <img src="img/6 7F5E379F-220F-4AEA-8D4F-40B7121473F3.jpeg" alt="carb" class="product-image">
+                      <img src="img/9 26FCF060-F7D4-4D11-98A0-2D5BFAF1D093.jpeg" alt="oyster" class="product-image">
+                      <img src="img/10 27AFA710-51B5-4555-A3E3-3F01D852CF3E.jpeg" alt="fish" class="product-image">
+                      <img src="img/12 69E1E80C-5A0F-4387-9CC2-61DE7E9609F7.jpeg" alt="salmon" class="product-image">
+                      <img src="img/14 299F478B-639C-405C-BB06-5FEF3CF50EF0.jpeg" alt="shrimp" class="product-image">
+                      <img src="img/15 648B7926-0537-48C1-B1B5-BE6F65138DEE.jpeg" alt="5L shrimp" class="product-image">
+                      <img src="img/18 B1A0C3A0-ABE5-4AB1-A1D5-FFBD653D5A78.jpeg" alt="sweet shrimp" class="product-image">
+                      <img src="img/19 DD7D2EC0-1E63-44D8-9003-B5F5E98FB61B.jpeg" alt="sea urchin" class="product-image">
+                      <img src="img/6 7F5E379F-220F-4AEA-8D4F-40B7121473F3.jpeg" alt="carb" class="product-image">
+                      <img src="img/9 26FCF060-F7D4-4D11-98A0-2D5BFAF1D093.jpeg" alt="oyster" class="product-image">
+                      <img src="img/10 27AFA710-51B5-4555-A3E3-3F01D852CF3E.jpeg" alt="fish" class="product-image">
+                      <img src="img/12 69E1E80C-5A0F-4387-9CC2-61DE7E9609F7.jpeg" alt="salmon" class="product-image">
+                      <img src="img/14 299F478B-639C-405C-BB06-5FEF3CF50EF0.jpeg" alt="shrimp" class="product-image">
+                      <img src="img/15 648B7926-0537-48C1-B1B5-BE6F65138DEE.jpeg" alt="5L shrimp" class="product-image">
+                      <img src="img/18 B1A0C3A0-ABE5-4AB1-A1D5-FFBD653D5A78.jpeg" alt="sweet shrimp" class="product-image">
+                      <img src="img/19 DD7D2EC0-1E63-44D8-9003-B5F5E98FB61B.jpeg" alt="sea urchin" class="product-image">
+                      <img src="img/6 7F5E379F-220F-4AEA-8D4F-40B7121473F3.jpeg" alt="carb" class="product-image">
+                      <img src="img/9 26FCF060-F7D4-4D11-98A0-2D5BFAF1D093.jpeg" alt="oyster" class="product-image">
+                      <img src="img/10 27AFA710-51B5-4555-A3E3-3F01D852CF3E.jpeg" alt="fish" class="product-image">
+                      <img src="img/12 69E1E80C-5A0F-4387-9CC2-61DE7E9609F7.jpeg" alt="salmon" class="product-image">
+                      <img src="img/14 299F478B-639C-405C-BB06-5FEF3CF50EF0.jpeg" alt="shrimp" class="product-image">
+                      <img src="img/15 648B7926-0537-48C1-B1B5-BE6F65138DEE.jpeg" alt="5L shrimp" class="product-image">
+                      <img src="img/18 B1A0C3A0-ABE5-4AB1-A1D5-FFBD653D5A78.jpeg" alt="sweet shrimp" class="product-image">
+                      <img src="img/19 DD7D2EC0-1E63-44D8-9003-B5F5E98FB61B.jpeg" alt="sea urchin" class="product-image">
+                  </span>
+                  <script src="js/lightbox.js"></script><br>
+               
+                
+                <h1>點擊圖片查看更多</h1>
+                
+                        <a href="carb.html">
+                        <img src="img/6 7F5E379F-220F-4AEA-8D4F-40B7121473F3.jpeg" alt="🦀️澎湖野生扁蟹身體">
+                        <h3>🦀️澎湖野生扁蟹身體🔥現貨供應🔥</h3><br>
+
+                        </a><a href="oyster.html">
+                        <img src="img/9 26FCF060-F7D4-4D11-98A0-2D5BFAF1D093.jpeg" alt="  🦪廣島牡蠣🦪">
+                        <h3>🦪廣島牡蠣🦪🔥現貨供應🔥</h3><br>
+                        
+                        </a><a href="fish.html">
+                        <img src="img/10 27AFA710-51B5-4555-A3E3-3F01D852CF3E.jpeg" alt="鱸魚清肉">
+                        <h3>鱸魚清肉🔥現貨供應🔥</h3> <br>
+                        
+                        </a><a href="salmon.html">
+                        <img src="img/12 69E1E80C-5A0F-4387-9CC2-61DE7E9609F7.jpeg" alt="鮭魚肚塊">
+                        <h3> 鮭魚肚塊🔥現貨供應🔥</h3><br>
+                        
+                        </a><a href="shrimp.html">
+                        <img src="img/14 299F478B-639C-405C-BB06-5FEF3CF50EF0.jpeg" alt=" 🦐汶萊皇室御用蝦🦐">
+                        <h3> 🦐汶萊皇室御用蝦🦐🔥現貨供應🔥</h3><br>
+                        
+                        </a><a href="5L shrimp.html">
+                        <img src="img/15 648B7926-0537-48C1-B1B5-BE6F65138DEE.jpeg" alt="✨生食級5L紅蝦 「開背赤蝦」🦐">
+                        <h3>✨生食級5L紅蝦 「開背赤蝦」🦐🔥現貨供應🔥</h3><br>
+                        
+                        </a><a href="sweet shrimp.html">
+                        <img src="img/18 B1A0C3A0-ABE5-4AB1-A1D5-FFBD653D5A78.jpeg" alt="生食級 【去殼帶尾甜蝦】甜蝦刺身😋">
+                        <h3>生食級 【去殼帶尾甜蝦】甜蝦刺身😋🔥現貨供應🔥</h3><br>
+
+                        </a><a href="beef.html">
+                        <img src="img/19 DD7D2EC0-1E63-44D8-9003-B5F5E98FB61B.jpeg" alt="智利生食級海膽🍣">
+                        <h3>智利生食級海膽🍣🔥現貨供應🔥</h3></a><br>
+            
+                        </div>
+       
+    </div>
+
+            <div id="b3" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="display: block;">
+                <h1>食材展示</h1>
+                <hr>
+                <style>
+                    @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+                .marquee {
+                  font-family: 'Indie Flower', cursive;
+                  font-size: 24px;
+                  color: rgb(54, 2, 61);
+                }
+                h1 {
+            font-size: 36px;
+            color: rgb(54, 2, 61);
+        }
+
+        /* 水平分隔線樣式 */
+        #t2 hr {
+            border: 1px solid #ccc;
+        }
+
+        /* 食材輪播樣式 */
+        .marquee {
+            font-family: 'Indie Flower', cursive;
+            font-size: 24px;
+            color: rgb(54, 2, 61);
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 20px; /* 與下方內容分隔的邊距 */
+        }
+
+        /* 輪播內容區域樣式 */
+        .marquee span {
+            display: inline-block;
+            width: 3000px; /* 設定總寬度以容納所有圖片 */
+            animation: marquee 30s linear infinite;
+        }
+
+        /* 輪播圖片樣式 */
+        .marquee span img {
+            width:300px; /* 保證圖片填滿容器 */
+            height: auto;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+                </style>
+               
+                
+                <div class="marquee">
+                  <span>
+                      <img src="img/25 IMG_7554.JPG" alt="" class="product-image">
+                      <img src="img/27 IMG_7556.JPG" alt="" class="product-image">
+                      <img src="img/29 IMG_7558.JPG" alt="" class="product-image">
+                      <img src="img/25 IMG_7554.JPG" alt="" class="product-image">
+                      <img src="img/27 IMG_7556.JPG" alt="" class="product-image">
+                      <img src="img/29 IMG_7558.JPG" alt="" class="product-image">
+                      <img src="img/25 IMG_7554.JPG" alt="" class="product-image">
+                      <img src="img/27 IMG_7556.JPG" alt="" class="product-image">
+                      <img src="img/29 IMG_7558.JPG" alt="" class="product-image">
+                      <img src="img/25 IMG_7554.JPG" alt="" class="product-image">
+                      <img src="img/27 IMG_7556.JPG" alt="" class="product-image">
+                      <img src="img/29 IMG_7558.JPG" alt="" class="product-image">
+                      <img src="img/25 IMG_7554.JPG" alt="" class="product-image">
+                      <img src="img/27 IMG_7556.JPG" alt="" class="product-image">
+                      <img src="img/29 IMG_7558.JPG" alt="" class="product-image">
+                  </span>
+                  <script src="js/lightbox.js"></script><br>
+               
+                
+                <h1>點擊圖片查看更多</h1>
+                
+                        <a href="cp.html">
+                        <img src="img/25 IMG_7554.JPG" alt="🌶麻辣牛三寶🌶">
+                        <h3>🌶麻辣牛三寶🌶🔥現貨供應🔥</h3><br>
+
+                        </a><a href="gp.html">
+                        <img src="img/29 IMG_7558.JPG" alt="🌿藥膳羊肉爐🐐">
+                        <h3>🌿藥膳羊肉爐🐐🔥現貨供應🔥</h3><br>
+                        
+                        </a><a href="fp.html">
+                        <img src="img/27 IMG_7556.JPG" alt="林聰明沙鍋菜">
+                        <h3>林聰明沙鍋菜🔥現貨供應🔥</h3> <br></a>
+                        
+                       </div>
+       </div>
+
+       <div id="c4" aria-labelledby="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="display: block;"> <h1>食材展示</h1>
+        <hr>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+        .marquee {
+          font-family: 'Indie Flower', cursive;
+          font-size: 24px;
+          color: rgb(54, 2, 61);
+        }
+        h1 {
+    font-size: 36px;
+    color: rgb(54, 2, 61);
+}
+
+/* 水平分隔線樣式 */
+#t2 hr {
+    border: 1px solid #ccc;
+}
+
+/* 食材輪播樣式 */
+.marquee {
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+    color: rgb(54, 2, 61);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px; /* 與下方內容分隔的邊距 */
+}
+
+/* 輪播內容區域樣式 */
+.marquee span {
+    display: inline-block;
+    width: 3000px; /* 設定總寬度以容納所有圖片 */
+    animation: marquee 30s linear infinite;
+}
+
+/* 輪播圖片樣式 */
+.marquee span img {
+    width:300px; /* 保證圖片填滿容器 */
+    height: auto;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+        </style>
+       
+        
+        <div class="marquee">
+          <span>
+              <img src="img/28 IMG_7557.JPG" alt="" class="product-image">
+              <img src="img/30 IMG_7559.JPG" alt="" class="product-image">
+              <img src="img/32 IMG_7561.JPG" alt="" class="product-image">
+              <img src="img/33 IMG_7562.JPG" alt="" class="product-image">
+              <img src="img/28 IMG_7557.JPG" alt="" class="product-image">
+              <img src="img/30 IMG_7559.JPG" alt="" class="product-image">
+              <img src="img/32 IMG_7561.JPG" alt="" class="product-image">
+              <img src="img/33 IMG_7562.JPG" alt="" class="product-image">
+              <img src="img/28 IMG_7557.JPG" alt="" class="product-image">
+              <img src="img/30 IMG_7559.JPG" alt="" class="product-image">
+              <img src="img/32 IMG_7561.JPG" alt="" class="product-image">
+              <img src="img/33 IMG_7562.JPG" alt="" class="product-image">
+              <img src="img/28 IMG_7557.JPG" alt="" class="product-image">
+              <img src="img/30 IMG_7559.JPG" alt="" class="product-image">
+              <img src="img/32 IMG_7561.JPG" alt="" class="product-image">
+              <img src="img/33 IMG_7562.JPG" alt="" class="product-image">
+              
+          </span>
+          <script src="js/lightbox.js"></script><br>
+       
+        
+        <h1>點擊圖片查看更多</h1>
+        
+                <a href="wr.html">
+                <img src="img/28 IMG_7557.JPG" alt="日式白玉糰子串 附花生粉">
+                <h3>日式白玉糰子串 附花生粉🔥現貨供應🔥</h3><br>
+
+                </a><a href="pancake.html">
+                <img src="img/30 IMG_7559.JPG" alt="迷你小圓鬆餅">
+                <h3>🌟星X克御用 迷你小圓鬆餅🔥現貨供應🔥</h3><br>
+                
+                </a><a href="pf.html">
+                <img src="img/33 IMG_7562.JPG" alt="冰涼泡芙">
+                <h3>冰涼泡芙🔥現貨供應🔥</h3> <br></a>
+                
+               </div>
+            </div>
+        <script>
+            $('#my_tabs').tabs({event:'mouseover'})
+            $('#my_dialog').dialog({autoOpen:false,
+            show:{
+            effect: "blind",
+            duration: 1000},
+            hide: {
+            effect: "explode",
+            duration: 1000}
+        })
+    
+        $('#my_button').click(function(){
+    
+            $('#my_dialog').dialog('open');
+        })
+        
+       
+    
+    </script>
+    
+
+<body>
+    
+</body>
+</html>
